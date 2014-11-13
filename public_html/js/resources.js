@@ -4,7 +4,8 @@ game.resources = [
 	 * @example
 	 * {name: "example", type:"image", src: "data/img/example.png"},
 	 */
-        {name: "background-tiles", type:"image", src: "data/img/background-tiles.png"}
+        {name: "background-tiles", type:"image", src: "data/img/background-tiles.png"},
+        {name: "mario", type:"image", src: "data/img/player1.png"}
 
 	/* Atlases 
 	 * @example
@@ -22,9 +23,9 @@ game.resources = [
 	 * @example
 	 * {name: "example_bgm", type: "audio", src: "data/bgm/"},
 	 */	
-
+  
 	/* Sound effects. 
 	 * @example
 	 * {name: "example_sfx", type: "audio", src: "data/sfx/"}
 	 */
-
+];
