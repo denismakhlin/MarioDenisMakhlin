@@ -8,6 +8,8 @@
   <tile id="4">
    <properties>
     <property name="type" value="solid"/>
+    <property name="xSpawn" value="400"/>
+    <property name="ySpawn" value="0"/>
    </properties>
   </tile>
  </tileset>
