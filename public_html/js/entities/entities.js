@@ -1,4 +1,8 @@
 // TODO
+/*-----------------------------------------------------------------------------
+ * Charecter/Player code that makes my character appear!
+ *-----------------------------------------------------------------------------
+ */
 game.PlayerEntity = me.Entity.extend({
     init: function(x, y, settings){
         this._super(me.Entity, 'init', [x, y, {
@@ -11,7 +15,10 @@ game.PlayerEntity = me.Entity.extend({
                     return (new me.Rect(0, 0, 30, 128)).toPolygon();
                 }     
             }]);  
-        
+/*-----------------------------------------------------------------------------
+ * Character/Player code that allowas my character to move with animation!
+ *-----------------------------------------------------------------------------
+ */        
         this.renderable.addAnimation("idle", [3]);
         this.renderable.addAnimation("smallWalk", [8, 9, 10, 11, 12, 13], 80);
         
@@ -20,7 +27,11 @@ game.PlayerEntity = me.Entity.extend({
         this.body.setVelocity(5, 20);
         me.game.viewport.follow(this.pos, me.game.viewport.AXIS.BOTH);
         },
-
+/*-----------------------------------------------------------------------------
+ * Character/Player code that allows my character to move up left and right - 
+ * with the touch of the arrow keys referring to the movement!
+ *----------------------------------------------------------------------------- 
+ */
     update: function(delta){
         if(me.input.isKeyPressed("right")){
             this.body.vel.x += this.body.accel.x * me.timer.tick;
@@ -41,7 +52,11 @@ game.PlayerEntity = me.Entity.extend({
                 this.body.jumping = true;
             }
         }
-        
+/*-----------------------------------------------------------------------------
+ * Character/Player code that allows my character to stop moving when keys are
+ * not being pressed making him "idle"
+ *-----------------------------------------------------------------------------
+ */        
         if(this.body.vel.x !== 0) {
             if(!this.renderable.isCurrentAnimation("smallWalk")) {
                 this.renderable.setCurrentAnimation("smallWalk");
@@ -54,7 +69,11 @@ game.PlayerEntity = me.Entity.extend({
         this._super(me.Entity, "update", [delta]);
         return true;
     },
-    
+/*-----------------------------------------------------------------------------
+ * Character/Player code that allows my  character to collide with an invisible
+ * trigger entry that allows the character to move on to the next level! 
+ *----------------------------------------------------------------------------- 
+ */   
     collideHandler: function(response) {
         
     }
