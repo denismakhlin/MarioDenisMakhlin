@@ -14,6 +14,9 @@ game.resources = [
         {name: "banner2", type:"image", src: "data/img/banner2.png"},
         {name: "badge2", type:"image", src: "data/img/badge2.png"},
         {name: "castle2", type:"image", src: "data/img/castle2.png"},
+        {name: "christmaslights", type:"image", src: "data/img/christmaslights.png"},
+        {name: "christmasbanner", type:"image", src: "data/img/christmasbanner.png"},
+        {name: "christmastree", type:"image", src: "data/img/christmastree.png"},
         {name: "title-screen", type:"image", src: "data/img/title-screen.png"},
 	/* Atlases 
 	 * @example
