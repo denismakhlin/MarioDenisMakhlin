@@ -21,6 +21,8 @@ game.resources = [
         {name: "christmassleigh", type:"image", src: "data/img/christmassleigh.png"},
         {name: "christmassnow", type:"image", src: "data/img/christmassnow.png"},
         {name: "yo1", type:"image", src: "data/img/yo1.png"},
+        {name: "sun", type:"image", src: "data/img/sun.png"},
+        {name: "boat", type:"image", src: "data/img/boat.png"},
         {name: "title-screen", type:"image", src: "data/img/title-screen.png"},
 	/* Atlases 
 	 * @example
@@ -34,6 +36,7 @@ game.resources = [
  	 */
         {name: "DenisLevel01", type: "tmx", src: "data/map/DenisLevel01.tmx"},
         {name: "DenisLevel02", type: "tmx", src: "data/map/DenisLevel02.tmx"},
+        {name: "DenisLevel03", type: "tmx", src: "data/map/DenisLevel03.tmx"}
 
 	/* Background music. 
 	 * @example
