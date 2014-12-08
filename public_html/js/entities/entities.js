@@ -75,6 +75,9 @@ game.PlayerEntity = me.Entity.extend({
  *----------------------------------------------------------------------------- 
  */   
     collideHandler: function(response) {
+        if(response.b.type === 'badguy') {
+            me.state.change(me.state.MENU);
+        }
         
     }
 });
@@ -94,6 +97,11 @@ game.LevelTrigger = me.Entity.extend({
     }
 });
 
+/*-----------------------------------------------------------------------------
+ * 
+ *-----------------------------------------------------------------------------
+ */
+
 game.BadGuy = me.Entity.extend ({
     init: function(x, y, settings) {
         this._super(me.Entity, 'init', [x, y, {
@@ -112,7 +120,7 @@ game.BadGuy = me.Entity.extend ({
         x = this.pos.x;
         this.startX = x;
         this.endX = x + width - this.spritewidth;
-        this.pos.z = x + width - this.spritewidth;
+        this.pos.x = x + width - this.spritewidth;
         this.updateBounds();
         
         this.alwaysUpdate = true;
@@ -138,7 +146,7 @@ game.BadGuy = me.Entity.extend ({
             if(this.walkLeft && this.pos.x <= this.startX) {
                 this.walkLeft = false;
             }else if(!this.walkLeft && this.pos.x >= this.endX){
-                this.walkleft = true;
+                this.walkLeft = true;
             }
             this.flipX(!this.walkLeft);
             this.body.vel.x += (this.walkLeft) ? -this.body.accel.x * me.timer.tick : this.body.accel.x * me.timer.tick;
