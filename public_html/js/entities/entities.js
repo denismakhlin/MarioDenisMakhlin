@@ -103,7 +103,7 @@ game.BadGuy = me.Entity.extend ({
                 width: 60,
                 height: 28,
                 getShape: function(){
-                    return (new me.Rect(0, 0, 60, 128)).toPolygon();
+                    return (new me.Rect(0, 0, 60, 28)).toPolygon();
                 }     
             }]);  
         
@@ -140,7 +140,7 @@ game.BadGuy = me.Entity.extend ({
             }else if(!this.walkLeft && this.pos.x >= this.endX){
                 this.walkleft = true;
             }
-            this.flipX(!this.wallkLeft);
+            this.flipX(!this.walkLeft);
             this.body.vel.x += (this.walkLeft) ? -this.body.accel.x * me.timer.tick : this.body.accel.x * me.timer.tick;
         }else{
             me.game.world.removeChild(this);

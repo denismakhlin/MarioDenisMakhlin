@@ -22,7 +22,7 @@
   </data>
  </layer>
  <objectgroup name="enemyentities">
-  <object name="BadGuy" x="488" y="490.667" width="844" height="66.6667"/>
+  <object name="BadGuy" x="469.333" y="493.333" width="844" height="66.6667"/>
   <object name="BadGuy" x="1049.33" y="492" width="634.667" height="66.6667"/>
   <object name="BadGuy" x="1749.33" y="490.667" width="208" height="68"/>
  </objectgroup>
