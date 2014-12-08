@@ -27,6 +27,7 @@ game.resources = [
         {name: "plane", type:"image", src: "data/img/plane.png"},
         {name: "choose", type:"image", src: "data/img/choose.png"},
         {name: "title-screen", type:"image", src: "data/img/title-screen.png"},
+        {name: "slime", type:"image", src: "data/img/slime-spritesheet.png"},
 	/* Atlases 
 	 * @example
 	 * {name: "example_tps", type: "tps", src: "data/img/example_tps.json"},
@@ -41,7 +42,8 @@ game.resources = [
         {name: "DenisLevel02", type: "tmx", src: "data/map/DenisLevel02.tmx"},
         {name: "DenisLevel03", type: "tmx", src: "data/map/DenisLevel03.tmx"},
         {name: "DenisLevel04", type: "tmx", src: "data/map/DenisLevel04.tmx"},
-        {name: "DenisLevel05", type: "tmx", src: "data/map/DenisLevel05.tmx"}
+        {name: "DenisLevel05", type: "tmx", src: "data/map/DenisLevel05.tmx"},
+        {name: "DenisLevel06", type: "tmx", src: "data/map/DenisLevel06.tmx"}
 
 	/* Background music. 
 	 * @example
