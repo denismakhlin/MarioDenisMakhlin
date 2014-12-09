@@ -96,7 +96,7 @@ game.PlayerEntity = me.Entity.extend({
  */
 
             if (this.body.vel.x !== 0) {
-                if (!this.renderable.isCurrentAnimation("bigWalk") && !this.renderable.isCurrentAnimation("grow") && !this.renderable.isCurrentAnimation("shrink")) {
+                if (!this.renderable.setCurrentAnimation("bigWalk") && !this.renderable.isCurrentAnimation("grow") && !this.renderable.isCurrentAnimation("shrink")) {
                     this.renderable.setCurrentAnimation("bigWalk");
                     this.renderable.setAnimationFrame();
                 }
@@ -139,7 +139,6 @@ game.PlayerEntity = me.Entity.extend({
                     this.body.vel.y -= this.body.accel.y * me.timer.tick;
                     this.jumping = true;
                     this.renderable.setCurrentAnimation("shrink", "idle");
-                    this.renderable.setCurrentAnimationFrame();
                 } else {
                     me.state.change(me.state.MENU);
                 }
@@ -149,8 +148,9 @@ game.PlayerEntity = me.Entity.extend({
  * mushroom causing my character to grow into the "Big-Idle image.
  *----------------------------------------------------------------------------- 
  */
-        } else if (response.b.type === 'mushroom') {
-            this.renderable.setAnimationFrame("grow", "bigIdle");
+        } 
+        else if (response.b.type === 'mushroom') {
+            this.renderable.setCurrentAnimation("grow", "bigIdle");
             this.big = true;
             me.game.world.removeChild(response.b);
         }
@@ -259,7 +259,7 @@ game.BadGuy = me.Entity.extend({
 /*-----------------------------------------------------------------------------
  * Below is the code that allows my mushroom image to appear with the use
  * of Tiled. The code below allows my mushroom to have the right height and
- * width.
+ * width. 
  *----------------------------------------------------------------------------- 
  */
 

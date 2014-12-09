@@ -9,7 +9,7 @@ game.PlayScreen = me.ScreenObject.extend({
  * Below is the code that lets me change what level I want to appear first
  *----------------------------------------------------------------------------- 
  */               
-                me.levelDirector.loadLevel("DenisLevel01");
+                me.levelDirector.loadLevel("DenisLevel04");
                 
                 this.resetPlayer(0, 400);
 /*-----------------------------------------------------------------------------
