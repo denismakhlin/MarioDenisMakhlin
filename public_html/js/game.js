@@ -1,7 +1,10 @@
 
 /* Game namespace */
 var game = {
-
+/*-----------------------------------------------------------------------------
+ * Below is basic pre made code that came with the melon.js file
+ *----------------------------------------------------------------------------- 
+ */
 	// an object where to store game information
 	data : {
 		// score
@@ -37,18 +40,29 @@ var game = {
 	me.state.change(me.state.LOADING);
 },
 
-	// Run on game resources loaded.
+/*-----------------------------------------------------------------------------
+ * Below is the code that registers my character, and any object layers
+ * I made in Tiled into my game, and allows them to appear and work.
+ *----------------------------------------------------------------------------- 
+ */
+
 	"loaded" : function () {
                 me.pool.register("mario", game.PlayerEntity, true);
                 me.pool.register("BadGuy", game.BadGuy);
                 me.pool.register("mushroom", game.Mushroom);
                 me.pool.register("levelTrigger", game.LevelTrigger);
                 
-            
+/*-----------------------------------------------------------------------------
+ * Below is the code that loads up the title screen and the game screen.
+ *----------------------------------------------------------------------------- 
+ */            
 		me.state.set(me.state.MENU, new game.TitleScreen());
 		me.state.set(me.state.PLAY, new game.PlayScreen());
 
-		// Start the game.
+/*-----------------------------------------------------------------------------
+ * Below is the code that is the startup title-screen
+ *----------------------------------------------------------------------------- 
+ */
 		me.state.change(me.state.MENU   );
 	}
 };

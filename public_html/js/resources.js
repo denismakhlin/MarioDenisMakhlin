@@ -1,9 +1,9 @@
 game.resources = [
-
-	/* Graphics. 
-	 * @example
-	 * {name: "example", type:"image", src: "data/img/example.png"},
-	 */
+/*-----------------------------------------------------------------------------
+ * Below is any image I used in this game and in Tiled that I have to register 
+ * into my netbeans so that it can appear on the screen.
+ *----------------------------------------------------------------------------- 
+ */
         {name: "background-tiles", type:"image", src: "data/img/background-tiles.png"},
         {name: "meta-tiles", type:"image", src: "data/img/meta-tiles.png"},
         {name: "mario", type:"image", src: "data/img/player1.png"},
@@ -29,6 +29,9 @@ game.resources = [
         {name: "title-screen", type:"image", src: "data/img/title-screen.png"},
         {name: "slime", type:"image", src: "data/img/slime-spritesheet.png"},
         {name: "mushroom", type:"image", src: "data/img/mushroom.png"},
+        {name: "balloon", type:"image", src: "data/img/balloon.png"},
+        {name: "Fireworks1", type:"image", src: "data/img/Fireworks1.png"},
+        {name: "madeit", type:"image", src: "data/img/madeit.png"},
 	/* Atlases 
 	 * @example
 	 * {name: "example_tps", type: "tps", src: "data/img/example_tps.json"},
@@ -39,13 +42,17 @@ game.resources = [
 	 * {name: "example01", type: "tmx", src: "data/map/example01.tmx"},
 	 * {name: "example01", type: "tmx", src: "data/map/example01.json"},
  	 */
+/*-----------------------------------------------------------------------------
+ * Below is the code that allows me to enter in any of my Levels/Maps into
+ * my game
+ *----------------------------------------------------------------------------- 
+ */       
         {name: "DenisLevel01", type: "tmx", src: "data/map/DenisLevel01.tmx"},
         {name: "DenisLevel02", type: "tmx", src: "data/map/DenisLevel02.tmx"},
         {name: "DenisLevel03", type: "tmx", src: "data/map/DenisLevel03.tmx"},
         {name: "DenisLevel04", type: "tmx", src: "data/map/DenisLevel04.tmx"},
         {name: "DenisLevel05", type: "tmx", src: "data/map/DenisLevel05.tmx"},
-        {name: "DenisLevel06", type: "tmx", src: "data/map/DenisLevel06.tmx"},
-        {name: "DenisLevel07", type: "tmx", src: "data/map/DenisLevel07.tmx"}
+        {name: "DenisLevel06", type: "tmx", src: "data/map/DenisLevel06.tmx"}
 
 	/* Background music. 
 	 * @example
