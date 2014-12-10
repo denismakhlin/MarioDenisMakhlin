@@ -39,7 +39,6 @@
  <objectgroup name="CollectableEntities">
   <object name="Mushroom" x="1609.33" y="145.333" width="70.6667" height="65.3333"/>
   <object name="Mushroom" x="2446.67" y="278.667" width="73.3333" height="70.6667"/>
-  <object name="Mushroom" x="104" y="498.667" width="66.6667" height="58.6667"/>
  </objectgroup>
  <objectgroup name="trigger-entitites">
   <object name="levelTrigger" x="3328" y="44" width="41.3333" height="93.3333">
